@@ -20,3 +20,7 @@ Route::get('/', function () {//Primera ruta con función anónima
 Route::get('/ventas', function(){
     return view ('ventas');
 });
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
