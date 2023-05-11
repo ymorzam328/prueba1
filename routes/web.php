@@ -25,3 +25,22 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+Route::get('/compras', function(){
+    return view ('compras');
+});
+
+Route::get('/departamentos', function(){
+    return view ('departamentos');
+});
+
+Route::get('/usuarios', function(){
+    return view ('usuarios');
+});
+
+Route::get('/exportes', function(){
+    return view ('exportes');
+});
+
+Route::get('/perfil', function(){
+    return view ('perfil');
+});

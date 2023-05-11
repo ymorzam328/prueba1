@@ -13,7 +13,7 @@
     <link href="{{ asset('css/app.css') }}" rel="styleheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
         <a class="navbar-brand"
             href="#">Navbar
@@ -45,8 +45,9 @@
         </div>
         </div>
         
-    </nav>
-    <!-- <div class="container-fluid">
+    </nav> -->
+
+    <div class="container-fluid">
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
             <div class="position-sticky pt-3">
@@ -79,17 +80,52 @@
             </div>
 
             </nav>
+            <main class="col-md-9">
+            <!-- Contenido del contenedor de información -->
+            <div class="container">
+                <h1>Información adicional</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla enim in luctus eleifend. Curabitur consequat rutrum nunc vitae blandit. Donec auctor varius felis, et ullamcorper lacus tincidunt in.</p>
+            </div>
 
+            <!-- Contenido del bloque yield -->
+            <div class="container">
+                @yield('content')
+            </div>
+        </main>
         </div>
-    </div> -->
+    </div>
 
 
     <!-- IMPORTANTE PONER ESTO PARA QUE APAREZCA EL CONTENIDO INCLUIDO 
     EN LAS OTRAS PAGINAS: welcome, ventas... -->
-    <div class="container">
+    <!-- <div class="container">
         @yield('content')
-    </div>
+    </div> -->
     
+
+    <!-- <div class="container-fluid">
+    <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse"> -->
+            <!-- Contenido del menú de navegación -->
+        <!-- </nav>
+
+        <main class="col-md-9"> -->
+            <!-- Contenido del contenedor de información -->
+            <!-- <div class="container">
+                <h1>Información adicional</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla enim in luctus eleifend. Curabitur consequat rutrum nunc vitae blandit. Donec auctor varius felis, et ullamcorper lacus tincidunt in.</p>
+            </div> -->
+
+            <!-- Contenido del bloque yield -->
+            <!-- <div class="container">
+                @yield('content')
+            </div>
+        </main>
+    </div>
+</div> -->
+
+
+
 
 
     <!-- <h1>Bienvenido al sistema</h1>
