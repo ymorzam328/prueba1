@@ -53,25 +53,25 @@
             <div class="position-sticky pt-3">
             <ul class="nav flex-column">
                 <li class="nav-item p-3">
-            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link" href="{{ url('/')}}">Inicio</a>
                 </li>
             <li class="nav-item p-3">
-               <a class="nav-link" href="#">Compras</a>  
+               <a class="nav-link" href="{{ url('/compras')}}">Compras</a>  
             </li>
             <li class="nav-item p-3">
-               <a class="nav-link" href="#">Departamentos</a>    
+               <a class="nav-link" href="{{ url('/departamentos')}}">Departamentos</a>    
             </li>
             <li class="nav-item p-3">
-               <a class="nav-link" href="#">Exportes</a> 
+               <a class="nav-link" href="{{ url('/exportes')}}">Exportes</a> 
             </li>
             <li class="nav-item p-3">
-               <a class="nav-link" href="#">Ventas</a> 
+               <a class="nav-link" href="{{ url('/ventas')}}">Ventas</a> 
             </li>
             <li class="nav-item p-3">
-               <a class="nav-link" href="#">Usuarios</a> 
+               <a class="nav-link" href="{{ url('/usuarios')}}">Usuarios</a> 
             </li>
             <li class="nav-item p-3">
-               <a class="nav-link" href="#">Información del usuario</a> 
+               <a class="nav-link" href="{{ url('/perfil')}}">Información del usuario</a> 
             </li>
             <li class="nav-item p-3">
                <a class="nav-link" href="#">Cerrar sesión</a> 
@@ -80,17 +80,18 @@
             </div>
 
             </nav>
-            <main class="col-md-9">
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <!-- Contenido del contenedor de información -->
-            <div class="container">
-                <h1>Información adicional</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla enim in luctus eleifend. Curabitur consequat rutrum nunc vitae blandit. Donec auctor varius felis, et ullamcorper lacus tincidunt in.</p>
-            </div>
+            <!-- <div class="d-flex justify-content-between flex-wrap p-3 mb-3"> -->
+                <!-- <h1>Información adicional</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla enim in luctus eleifend. Curabitur consequat rutrum nunc vitae blandit. Donec auctor varius felis, et ullamcorper lacus tincidunt in.</p> -->
+            <!-- </div> -->
 
             <!-- Contenido del bloque yield -->
-            <div class="container">
+            <!-- <div class="container"> -->
+                <br>
                 @yield('content')
-            </div>
+            <!-- </div> -->
         </main>
         </div>
     </div>
