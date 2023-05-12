@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,4 +44,13 @@ Route::get('/exportes', function(){
 
 Route::get('/perfil', function(){
     return view ('perfil');
+});
+
+Route::get('/verificar-conexion', function () {
+    try {
+        DB::connection()->getPdo();
+        return "Conexión exitosa";
+    } catch (\Exception $e) {
+        return "Error al conectar a la base de datos: " . $e->getMessage();
+    }
 });
